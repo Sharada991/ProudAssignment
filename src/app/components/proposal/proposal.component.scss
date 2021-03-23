@@ -1,0 +1,108 @@
+.proposal {
+    width: 800px;
+    margin: 40px auto;
+    font-size: 16px;
+  }
+  
+  .proposal-header,
+  .proposal p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  
+  .proposal-header {
+    background:#4d148c;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+  }
+  
+  .proposal-container {
+    background: #ebebeb;
+    padding: 40px;
+  }
+  
+  .proposal p {
+    padding: 12px;
+  }
+  
+  .proposal input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px;
+    outline: 0;
+    font-family: inherit;
+    font-size: 18px;
+  }
+  
+  .proposal input[type="text"],
+  .proposal input[type="password"],
+  .proposal input[type="email"] {
+    background: #fff;
+    border-color: #bbb;
+    color: #555;
+  }
+  
+  .proposal input[type="text"]:focus,
+  .proposal input[type="password"]:focus,
+  .proposal input[type="email"]:focus {
+    border-color: #888;
+  }
+  
+  .proposal input[type="submit"] {
+    background:#4d148c;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 13px;
+  }
+  
+  .proposal input[type="submit"]:hover {
+    background: #8356b3;
+  }
+
+  .action_btn_submit{
+float: left;
+margin-left: 140px;
+margin-right: 30px;
+  }
+  .action_btn_cancel{
+      margin-right: 40px;
+  }
+ 
+  .has-error input[type="text"],
+.has-error input[type="password"],
+.has-error input[type="email"] {
+    border-color: rgb(216, 12, 12);
+    color: rgb(230, 14, 14);
+}   
+.qd-header{
+    height: 75px;
+    background: #4d148c;}
+
+.fed-logo{
+  height: 45px;
+   margin-left: 20px;
+    margin-top: 16px;
+}
+a{
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 15px;
+    color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+    color: rgb(206, 199, 199);
+  }

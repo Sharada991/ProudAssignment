@@ -1,0 +1,45 @@
+.qd-header{
+    height: 75px;
+    background: #4d148c;}
+
+.fed-logo{
+  height: 45px;
+   margin-left: 20px;
+    margin-top: 16px;
+}
+a{
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    font-size: 16px;
+    color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+    color: rgb(206, 199, 199);
+  }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+ i{
+cursor: pointer;
+  }
+  h2{
+      text-align: center;
+      margin-top: 30px;
+  }

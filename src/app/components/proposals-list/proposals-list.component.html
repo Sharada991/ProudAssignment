@@ -1,0 +1,26 @@
+<div class='qd-header'>
+    <img src='./assets/FedEx-Logo.png' alt="logo" class='fed-logo pull-left' />
+   
+    <span><a [routerLink]="['/app-user-details']" routerLinkActive="router-link-active" >USER DETAILS</a></span>
+    <span><a [routerLink]="['/app-proposal']" routerLinkActive="router-link-active" >PROPOSAL FORM</a></span>
+ </div>
+<div >
+    <h2>LIST OF PROPOSALS</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Edit</th>
+          </tr>
+<tr *ngFor="let list of proposalList;let i = index">
+<td>{{list.userName}}</td>
+<td>{{list.email}}</td>
+<td>{{list.address}}</td>
+<td><i class='fas fa-edit' style='font-size:24px' (click)="edit(i)"></i></td>
+</tr>
+          
+
+</table>
+</div>
+
