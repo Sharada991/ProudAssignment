@@ -60,10 +60,6 @@ export class ProposalComponent implements OnInit {
     if (this.proposalForm.invalid) {
       return;
     }
-    this.proposalList.push(this.proposalForm.value);
-    this.proposal.proposalList(this.proposalList);
-    console.log('proposal list' + this.proposalList);
-    console.log(this.proposalForm.value);
     this.user = Object.assign(this.user, this.proposalForm.value);
     this.proposal.addUpdateUser(this.user, this.userId);
     this.router.navigateByUrl('/app-proposals-list');
