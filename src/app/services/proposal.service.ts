@@ -24,7 +24,4 @@ export class ProposalService {
   proposalList(data: any) {
     this.list = data;
   }
-  getList() {
-    return this.list;
-  }
 }

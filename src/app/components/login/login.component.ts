@@ -12,10 +12,7 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   isSubmitted = false;
   user: any = {};
-  constructor(
-    private router: Router,
-    private formBuilder: FormBuilder
-  ) {}
+  constructor(private router: Router, private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({

@@ -4,21 +4,20 @@ import { ProposalService } from '../../services/proposal.service';
 @Component({
   selector: 'app-proposals-list',
   templateUrl: './proposals-list.component.html',
-  styleUrls: ['./proposals-list.component.scss']
+  styleUrls: ['./proposals-list.component.scss'],
 })
 export class ProposalsListComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor(private router: Router) { }
- 
-  proposalList:any=[];
-  listofproposal:any=[];
+  proposalList: any = [];
+  listofproposal: any = [];
   ngOnInit(): void {
-   this.proposalList= JSON.parse(String(localStorage.getItem('proposalUsers')));;
-   console.log(this.proposalList);
-  
-
+    this.proposalList = JSON.parse(
+      String(localStorage.getItem('proposalUsers'))
+    );
+    console.log(this.proposalList);
   }
-edit(i:any ) {
-  this.router.navigateByUrl('/app-proposal/'+i);
-}
+  edit(i: any) {
+    this.router.navigateByUrl('/app-proposal/' + i);
+  }
 }
