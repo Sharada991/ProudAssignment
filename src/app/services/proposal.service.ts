@@ -4,8 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ProposalService {
-  list = [];
-  proposal: string;
   constructor() {}
   addUpdateUser(user: any, userId: number) {
     let users = [];
@@ -20,8 +18,5 @@ export class ProposalService {
       users = [user];
     }
     localStorage.setItem('proposalUsers', JSON.stringify(users));
-  }
-  proposalList(data: any) {
-    this.list = data;
   }
 }
